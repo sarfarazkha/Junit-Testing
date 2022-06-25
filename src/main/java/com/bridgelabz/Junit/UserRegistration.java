@@ -10,7 +10,9 @@ public class UserRegistration {
     public static final String NAME_PATTERN = "^[A-Z][a-z]{2,}$";
     public static final String EMAIL_PATTERN = "^([a-z]{3}[.][a-z]{3}@[a-z]{2}[.][a-z]{2}[.][a-z]{2})$";
 
-    public static final String MOBILE_PATTERN ="^[0-9]{2}\\s[0-9]{10}$";
+    public static final String MOBILE_PATTERN = "^[0-9]{2}\\s[0-9]{10}$";
+    public static final String RULE1_PATTERN = "(^?=.[0-9])(?=.[a-z])(?=.[A-Z])(?=.[*.!@$%^&]).{8,}$";
+    public static final String RULE2_PATTERN = "^(?=.[0-9])(?=.[a-z])(?=.[A-Z]){1,}(?=.[*.!@$%^&]).{8,}$";
 
     public boolean validateFirstName(String firstName) {
         Pattern pattern = Pattern.compile(NAME_PATTERN);
@@ -35,4 +37,19 @@ public class UserRegistration {
         matcher = pattern.matcher(phoneNumber);
         return matcher.matches();
     }
+
+
+
+    public boolean validateRule1(String rule1) {
+        pattern = Pattern.compile(RULE1_PATTERN);
+        matcher = pattern.matcher(rule1);
+        return matcher.matches();
+    }
+    public boolean validateRule2(String rule2) {
+        Pattern pattern = Pattern.compile(RULE2_PATTERN);
+        Matcher matcher = pattern.matcher(rule2);
+        return matcher.matches();
+    }
+
+
 }
