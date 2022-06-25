@@ -1,5 +1,5 @@
 package com.bridgelabz.Junittest;
-import com.bridgelabz.Junit.UserRegistration;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,14 +8,26 @@ import static org.junit.Assert.*;
 public class UserRegistrationTest {
     @Test
     public void givenFirstName_WhenProper_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        boolean result = userRegistration.validateFirstName("Sarfaraz");
+        UserRegistrationTest userRegistration = new UserRegistrationTest();
+        boolean result = userRegistration.validateFirstName("sarfaraz");
+        Assert.assertTrue(result);
+    }
+
+    private boolean validateFirstName(String sarfaraz) {
+        return false;
+    }
+
+
+    @Test
+    public void givenLastName_WhenProper_ShouldReturnTrue() {
+        UserRegistrationTest userRegistration = new UserRegistrationTest();
+        boolean result = userRegistration.validateFirstName("khan");
         Assert.assertTrue(result);
     }
     @Test
-    public void givenLastName_WhenProper_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        boolean result = userRegistration.validateFirstName("khan");
+    public void givenEmail_WhenProper_ShouldReturnTrue() {
+        UserRegistrationTest userRegistration = new UserRegistrationTest();
+        boolean result = userRegistration.validateFirstName("abc.xyz@bl.co.in");
         Assert.assertTrue(result);
     }
 }
