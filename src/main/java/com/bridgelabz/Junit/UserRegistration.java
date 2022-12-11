@@ -64,6 +64,6 @@ public class UserRegistration {
     public boolean validateRule4(String rule4) {
         Pattern pattern = Pattern.compile(RULE4_PATTERN);
         Matcher matcher = pattern.matcher(rule4);
-        return matcher.matches();
+        return matcher.matches(); 
     }
 }
