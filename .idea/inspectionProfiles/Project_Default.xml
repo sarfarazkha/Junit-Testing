@@ -3,4 +3,4 @@
     <option name="myName" value="Project Default" />
     <inspection_tool class="MavenModelInspection" enabled="false" level="ERROR" enabled_by_default="false" />
   </profile>
-</component>
+</component> 
