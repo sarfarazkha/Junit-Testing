@@ -59,7 +59,7 @@ public class UserRegistrationTest {
     public void givenRule4_WhenNotMatched_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validateRule4("saayyvvtt6@gbvh8");
-        Assert.assertTrue(result);
+        Assert.assertTrue(result); 
     }
 }
 
