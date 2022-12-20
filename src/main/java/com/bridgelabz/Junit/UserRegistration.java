@@ -65,5 +65,5 @@ public class UserRegistration {
         Pattern pattern = Pattern.compile(RULE4_PATTERN);
         Matcher matcher = pattern.matcher(rule4);
         return matcher.matches();
-    }
+    } 
 }
