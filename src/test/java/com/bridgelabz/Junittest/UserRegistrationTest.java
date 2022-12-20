@@ -25,7 +25,7 @@ public class UserRegistrationTest {
     public void givenEmail_WhenProper_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validateEmail("abc.xyz@bl.co.in");
-        Assert.assertTrue(result);
+        Assert.assertTrue(result); 
     }
 
     @Test
