@@ -10,7 +10,7 @@ public class UserRegistrationTest {
     public void givenFirstName_WhenProper_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validateFirstName("sarfaraz");
-        Assert.assertTrue(result);
+        Assert.assertTrue(result); 
     }
 }
 
