@@ -28,7 +28,7 @@ public class UserRegistrationTest {
     public void givenEmail_WhenProper_ShouldReturnTrue() {
         UserRegistrationTest userRegistration = new UserRegistrationTest();
         boolean result = userRegistration.validateFirstName("abc.xyz@bl.co.in");
-        Assert.assertTrue(result);
+        Assert.assertTrue(result); 
     }
 }
 
