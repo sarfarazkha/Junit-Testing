@@ -33,7 +33,7 @@ public class UserRegistrationTest {
     public void givenMobileNumber_WhenProper_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validateMobileNumber("91 9372586450");
-        Assert.assertTrue(result);
+        Assert.assertTrue(result); 
     }
 }
 
