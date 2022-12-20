@@ -33,6 +33,6 @@ public class UserRegistration {
     public boolean validateMobileNumber(String phoneNumber) {
         pattern = Pattern.compile(MOBILE_PATTERN);
         matcher = pattern.matcher(phoneNumber);
-        return matcher.matches();
+        return matcher.matches(); 
     }
 }
