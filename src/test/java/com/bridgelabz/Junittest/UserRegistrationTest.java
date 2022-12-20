@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class UserRegistrationTest {
+public class UserRegistrationTest { 
     @Test
     public void givenFirstName_WhenProper_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
