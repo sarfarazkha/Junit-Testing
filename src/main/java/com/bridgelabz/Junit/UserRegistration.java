@@ -10,6 +10,6 @@ public class UserRegistration {
     public boolean validateFirstName(String firstName) {
         Pattern pattern = Pattern.compile(NAME_PATTERN);
         Matcher matcher = pattern.matcher(firstName);
-        return matcher.matches();
+        return matcher.matches(); 
     }
 }
