@@ -50,7 +50,7 @@ public class UserRegistrationTest {
 
     private boolean validateMobileNumber(String no) {
 
-        return true;
+        return true; 
     }
 }
 
