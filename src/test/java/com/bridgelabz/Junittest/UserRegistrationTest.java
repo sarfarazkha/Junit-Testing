@@ -31,7 +31,7 @@ public class UserRegistrationTest {
     public void givenMobileNumber_WhenNotMatched_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validateMobileNumber("8765343900");
-        Assert.assertTrue(result);
+        Assert.assertTrue(result); 
     }
 
 
