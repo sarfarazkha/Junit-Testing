@@ -22,7 +22,7 @@ public class UserRegistration {
     public boolean validateEmail(String eMail) {
         pattern = Pattern.compile(EMAIL_PATTERN);
         matcher = pattern.matcher(eMail);
-        return matcher.matches();
+        return matcher.matches(); 
     }
 
 
