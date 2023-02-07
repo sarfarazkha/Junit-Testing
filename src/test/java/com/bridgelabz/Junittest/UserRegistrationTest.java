@@ -18,7 +18,7 @@ public class UserRegistrationTest {
     public void givenLastName_WhenProper_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validateLastName("khan");
-        Assert.assertTrue(result);
+        Assert.assertTrue(result); 
     }
 
     @Test
@@ -28,7 +28,7 @@ public class UserRegistrationTest {
         Assert.assertTrue(result);
     }
 
-    @Test
+    @Test 
     public void givenMobileNumber_WhenNotMatched_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validateMobileNumber("8765342540");
